@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./outros.css">
+ 
+    <title>Cinema CineSenac</title>
+</head>
+
+<body>
+
+    <!-- 1° -- Cabeçalho-->
+    <header>
+        <img id="logo" src="./img/fundos-do-batman.jpg" alt="Logo do Batman"/>
+        <!--Criando nossa navegação-->
+        <nav>
+            <!--Criando nossa lista não ordenada-->
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+
+                <a href="./localizacao.html">
+                    <li>Localização</li>
+                </a>
+
+            </ul>
+
+        </nav>
+    </header>
+<!-------------------------------------------------------------------------------->
+
+<!--------2°--Banner do Batman----------------------------------------------------->
+<div id="banner"></div>
+<!-------------------------------------------------------------------------------->
+<div class="contato">
+    <h1>Formulário de contato</h1>
+
+</div>
+<!--Formulário-->
+<div class="form-container">
+<form class="formulario" action="https://formsubmit.co/giovanagabriely790@gmail.com" method="post">
+    <!--Mostra página sucesso mas esse campo fica escondido-->
+   
+   <!--
+    <div>
+        <input type="hidden" name="_next" value="https://cinema-cinesenac-batman.vercel.app/sucesso.html">
+    </div>
+
+   
+    <div>
+        <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, 
+        obrigado pelo contato e logo responderemos!">
+    </div>
+    -->
+    <!--o captcha escondido contra robos  
+    <div>
+        <input type="hidden" name="_captcha" value="false">
+
+    </div>
+-->
+    <div>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required  placeholder="Digite seu nome"/>
+    </div>
+
+    <div>
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone" name="telefone" required placeholder="Digite seu telefone"/>
+    </div>
+
+   
+    <!--Input E_mail-->
+<div>
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" required placeholder="Digite seu e-mail"/>
+</div>
+  
+<!--input Assunto-->
+<div>
+  <label for="assunto">Assunto</label>
+  <input type="text" id="assunto" name="assunto" required placeholder="Assunto"/>
+</div>
+
+<div>
+  <label for="msg">Mensagem:</label>
+  <textarea id="msg" name="msg" required rows="10" placeholder="Mensagem"></textarea>
+</div>
+<!--Botão enviar-->
+<div>
+  <button type="submit">Enviar sua mensagem</button>
+</div>
+
+
+
+
+
+
+
+</form>
+</div>
+<!--Footer -> rodapé -> colocamos (a logo nossa imagem),
+    (textos todos os direitos reservados),(por quem foi desenvolvido essa página)
+(vamos ter uma navegação quando for usar celular)-->
+
+<footer>
+    <!--seja redimensionada para caber completamente dentro do contêiner,
+     mantendo sua proporção original.-->
+    <img id="logo" style="object-fit: contain;" src="./img/logo-batman.png" alt=" Logo Batman">
+    <span class="footer-texto">Todos os direitos reservados © 2024</span>
+    <span class="footer-texto">Desenvolvido por: Giovanna Gabriely</span>    
+
+    <!--Navegação dentro do foote para dispositivo móvel-->
+    <nav class="footer-navigation">
+        <!--Criando nossa lista não ordenada-->
+        <ul class="footer-list">
+            <a href="./index.html">
+                <li>Home</li>
+            </a>
+
+            <a href="./contato.html">
+                <li>Contato</li>
+            </a>
+
+            <a href="./fotos.html">
+                <li>Fotos</li>
+            </a>
+
+            <a href="./localizacao.html">
+                <li>Localização</li>
+            </a>
+
+        </ul>
+
+    </nav>
+</footer>
+
+</body>
+
+</html>
